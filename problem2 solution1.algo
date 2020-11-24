@@ -1,0 +1,24 @@
+ALGORITHM problem1-solution1
+VAR
+    
+    set1 : ARRAY_OF INTEGER;
+    set2 : ARRAY_OF INTEGER;
+    sum:INTEGER:=0;
+    i,j:INTEGER;
+    
+BEGIN
+    write('entrer les valeurs du set1');
+   
+    write('entrer les valeurs du set2');
+   
+    FOR i FROM 1 TO set1.length-1   DO
+       FOR j FROM 1 TO set2.length-1  DO
+        IF (set1[i] <> set2[j]) THEN
+            sum:= set2[j] + set1[i] ;
+        END_IF
+    END_FOR
+   
+    write("la somme des valeurs communs est ",sum);
+    
+    
+END
